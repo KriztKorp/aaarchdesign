@@ -1,0 +1,328 @@
+/* Variables (opcional) */
+:root {
+    --color-fondo: #f9f8f6; /* Un tono crema claro */
+    --color-primario: #4c4c4c; /* Gris oscuro para textos */
+    --color-secundario: #9b9b9b; /* Gris más claro */
+    --color-acento: #ccc; /* Gris intermedio para detalles */
+    --fuente-titulo: 'Playfair Display', serif;
+    --fuente-texto: 'Lato', sans-serif;
+  }
+  
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    font-family: var(--fuente-texto);
+    line-height: 1.5;
+  }
+  
+  header.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .logo {
+    font-family: var(--fuente-titulo);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .logo span {
+    color: var(--color-secundario);
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: var(--color-primario);
+    font-weight: 400;
+    transition: color 0.3s;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .main-nav a:hover {
+    color: var(--color-secundario);
+    transform: translateY(-5px);
+    background-color: var(--color-primario);
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+  }
+  .hero-texto {
+    flex: 1 1 350px;
+    margin-right: 2rem;
+  }
+  .hero-texto h2 {
+    font-family: var(--fuente-titulo);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .hero-texto p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
+  }
+  .hero-imagen {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-imagen img {
+    max-width: 300px;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  /* Proyectos Recientes */
+  .proyectos-recientes {
+    padding: 2rem;
+    text-align: center;
+  }
+  .proyectos-recientes h2 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .carrusel {
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto 1rem auto;
+    position: relative;
+    height: 250px;
+  }
+  .slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Controles del carrusel */
+  .controles-carrusel {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .controles-carrusel button {
+    border: none;
+    background-color: var(--color-acento);
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .controles-carrusel button:hover {
+    background-color: var(--color-primario);
+  }
+  
+  /* Sección Quién Soy */
+  .quienes-somos {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  .quienes-somos h2 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .quienes-somos .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .foto-arquitecta {
+    max-width: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .descripcion {
+    flex: 1 1 300px;
+  }
+  .descripcion p {
+    margin-bottom: 1rem;
+  }
+  .descripcion ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  .descripcion ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Sección Contacto */
+  .contacto {
+    padding: 2rem;
+    text-align: center;
+  }
+  .contacto h2 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .info-contacto p {
+    margin-bottom: 1rem;
+  }
+  .btn-contacto {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-primario);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .btn-contacto:hover {
+    background-color: var(--color-secundario);
+  }
+  .redes-sociales {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .redes-sociales a img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  /* Footer */
+  .main-footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-secundario);
+    border-top: 1px solid var(--color-acento);
+  }
+  
+  /* Responsivo básico */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+
+    .logo {
+      font-family: var(--fuente-titulo);
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      justify-self: center;
+      padding-bottom: 5px;
+    }
+
+    header.main-header {
+      display: inherit;
+      /* justify-content: space-between; */
+      align-items: center;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    .hero-texto {
+      flex: 1 1 30px;
+      margin-right: 2rem;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex; /* Reemplaza -webkit-inline-box por flex */
+      gap: 1.5rem;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center;     /* Alinea verticalmente */
+    }
+    
+    .main-nav a {
+      text-decoration: none;
+      color: var(--color-primario);
+      font-weight: 400;
+      transition: color 0.3s;
+      border-radius: 5px;
+      padding: 5px;
+      display: inline-block; /* o block */
+      text-align: center;
+    }    
+
+    .quienes-somos .info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+ /* Proyectos.html */
+
+ /* Sección de proyectos en cuadrícula */
+.tarjetas-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto; /* centra el contenedor */
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid var(--color-acento);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card h3 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .card p {
+    font-family: var(--fuente-texto);
+    margin: 0 1rem 1rem 1rem;
+    font-size: 0.95rem;
+    color: var(--color-primario);
+  }
+  
+  /* Efecto hover */
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  

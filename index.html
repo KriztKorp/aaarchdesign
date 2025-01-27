@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tipografías recomendadas (ejemplo: Playfair Display para títulos y Lato para texto) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>AAArchDesign</title>
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="logo">
+      <span>AA</span>Arch<span>Design</span>
+    </h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/Proyectos.html">Proyectos</a></li>
+        <li><a href="/AcercaDe.html">Acerca De</a></li>
+        <li><a href="/Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de portada / hero -->
+    <section class="hero">
+      <div class="hero-texto">
+        <h2>¡Hola!</h2>
+        <p>
+          Soy la Arq. Alicia Aimé y estoy aquí para ayudarte a diseñar y construir
+          el espacio que siempre has soñado.
+        </p>
+        <p>
+          Cada proyecto busca materializar tus sueños, creando espacios funcionales
+          que reflejen tu esencia y cuenten tu historia.
+        </p>
+      </div>
+      <div class="hero-imagen">
+        <!-- Ajusta la ruta de la imagen a la que desees mostrar en portada -->
+        <img src="assets/logo.png" alt="AAlogo" />
+      </div>
+    </section>
+
+    <!-- Sección de proyectos recientes -->
+    <section class="proyectos-recientes">
+      <h2>Proyectos Recientes</h2>
+      <div class="carrusel" id="carrusel">
+        <!-- Carrusel con imágenes de tus últimos proyectos -->
+        <div class="slide">
+          <img src="assets/proyecto1.png" alt="Proyecto 1" />
+        </div>
+        <div class="slide">
+          <img src="assets/proyecto2.png" alt="Proyecto 2" />
+        </div>
+        <div class="slide">
+          <img src="assets/proyecto3.png" alt="Proyecto 3" />
+        </div>
+      </div>
+      <div class="controles-carrusel">
+        <button id="prevBtn">←</button>
+        <button id="nextBtn">→</button>
+      </div>
+      <div class="imagenes-destacadas">
+        <!-- Sección opcional para destacar otras imágenes/galería -->
+      </div>
+    </section>
+
+    <!-- Sección de quién soy -->
+    <section class="quienes-somos">
+      <h2>¿Quién Soy?</h2>
+      <div class="info">
+        <img src="assets/arquitecta.jpg" alt="Arquitecta" class="foto-arquitecta" />
+        <div class="descripcion">
+          <p>
+            Como arquitecta, mi misión es diseñar espacios funcionales que reflejen tu
+            esencia y cuenten tu historia. Cada proyecto que realizo busca transformar
+            tus necesidades y visión en una realidad única.
+          </p>
+          <ul>
+            <li>Remodelaciones personalizadas</li>
+            <li>Ampliaciones para hogares y negocios</li>
+            <li>Diseño de interiores y exteriores</li>
+            <li>Renders y planos técnicos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <div class="info-contacto">
+        <p>
+          ¿Listo para comenzar tu proyecto? Envíame un correo a través de este
+          formulario:
+        </p>
+        <a href="/Contacto.html" class="btn-contacto">Ir al formulario</a>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/profile.php?id=100071973511901"
+          ><img src="assets/facebook-logo.png" alt="Facebook"
+        /></a>
+        <a href="https://wa.me/528241002952"
+          ><img src="assets/whatsapp-logo.png" alt="Whatsapp"
+        /></a>
+        <a href=""
+          ><img src="" alt="red-social-3"
+        /></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2025 AAArchDesign. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
