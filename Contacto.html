@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Contacto - AAArchDesign</title>
+  <style>
+    .contacto {
+      place-self: center;
+      max-width: 900px;
+      margin: 2rem;
+      text-align: center;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contacto h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #4c4c4c;
+    }
+    .contacto p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    .contacto form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .contacto input, .contacto textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contacto button {
+      background: #4c4c4c;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contacto button:hover {
+      background: #9b9b9b;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="logo">
+      <span>AA</span>Arch<span>Design</span>
+    </h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/Proyectos.html">Proyectos</a></li>
+        <li><a href="/AcercaDe.html">Acerca De</a></li>
+        <li><a href="/Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contacto">
+    <h2>Contacto</h2>
+    <p>
+      ¿Tienes un proyecto en mente o alguna consulta? No dudes en escribirme. 
+      Estoy aquí para ayudarte a hacer realidad tus ideas arquitectónicas.
+    </p>
+    <form action="#" method="post">
+      <input type="text" name="nombre" placeholder="Tu Nombre" required>
+      <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 AAArchDesign. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
