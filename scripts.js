@@ -38,3 +38,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // Mostrar las imágenes al cargar la página
   mostrarSlides();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleImages = document.querySelectorAll('.toggle-size');
+  
+    toggleImages.forEach(img => {
+      img.addEventListener('click', () => {
+        // Si la imagen está a 100% la regresamos a 400px; de lo contrario la ponemos a 100%.
+        if (img.style.maxWidth === '100%') {
+          img.style.maxWidth = '400px';
+        } else {
+          img.style.maxWidth = '100%';
+        }
+      });
+    });
+  });
+  
