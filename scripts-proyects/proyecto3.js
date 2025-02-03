@@ -1,33 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     // 1. URL base de tu bucket S3 (asegúrate de que los archivos sean públicos)
-    const s3BaseUrl = "https://aaarchdesign.s3.amazonaws.com/CasaHab-Roel&Laura";
+    const s3BaseUrl = "https://aaarchdesign.s3.amazonaws.com/ValleDelSol";
 
     // 2. Lista manual de nombres de archivo (jpg, png, etc.)
     const imagePaths = [
-      "alberca.jpg",
-      "alberca1.png",
-      "alberca2.jpg",
-      "areasocial.png",
-      "bajoescalera.png",
-      "cocina.jpg",
-      "lavanderia.png",
-      "REC 2.jpg",
-      "REC PRINC.jpg",
-      "rec1.jpg",
-      "RECAMARA PRIN OK.jpg",
-      "RECAMARA PRIN OK.png",
-      "RECAMARA PRINCIPAL 2.png",
-      "RECAMARA PRINCIPAL.jpg",
-      "RENDER ALBERCA 1.jpg",
-      "render alberca 1.png",
-      "RENDER AREA ALBERCA1.jpg",
-      "RENDER AREA SOCIAL 1.jpg",
-      "RENDER AREA SOCIAL 2.jpg",
-      "RENDER AREA SOCIAL 3.jpg",
-      "RENDER AREA TERRAZA .jpg",
-      "SALA 2.jpg",
-      "SALA.jpg",
-    ];
+      "COCINA - VALLE DEL SOL.jpg",
+      "RENDER 1 okok 070123 2 LISTO.jpg",
+      "RENDER 1 okok 070123.jpg",
+      "RENDER 2 OK DIA 070123.png",
+      "RENDER COCINA OK.png",
+      ];
 
     // 3. Selecciona la sección donde se inyectarán las imágenes
     const gallerySection = document.querySelector(".image-gallery");
