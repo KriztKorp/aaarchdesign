@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     // 1. URL base de tu bucket S3 (asegúrate de que los archivos sean públicos)
-    const s3BaseUrl = "https://aaarchdesign.s3.amazonaws.com/ValleDelSol";
+    const s3BaseUrl = "https://aaarchdesign.s3.us-east-2.amazonaws.com/ValleDelSol";
 
     // 2. Lista manual de nombres de archivo (jpg, png, etc.)
     const imagePaths = [
-      "COCINA - VALLE DEL SOL.jpg",
-      "RENDER 1 okok 070123 2 LISTO.jpg",
-      "RENDER 1 okok 070123.jpg",
-      "RENDER 2 OK DIA 070123.png",
-      "RENDER COCINA OK.png",
+      "COCINA-ValleDelSol.jpg",
+      "RENDER1.jpg",
+      "RENDER2.jpg",
+      "RENDER3.jpg",
+      "RENDER4.png",
+      "RENDER5.png",
       ];
 
     // 3. Selecciona la sección donde se inyectarán las imágenes
@@ -23,8 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
       img.loading = "lazy";
 
       // Medidas iniciales (opcional) si quieres un tamaño fijo:
-      // img.width = 400;
-      // img.height = 225;
+      img.width = 400;
+      img.height = 225;
 
       // Al hacer clic, alternar entre fullscreen y estado normal
       img.addEventListener("click", () => {

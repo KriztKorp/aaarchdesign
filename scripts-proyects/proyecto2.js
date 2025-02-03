@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // 1. URL base de tu bucket S3 (asegúrate de que los archivos sean públicos)
-    const s3BaseUrl = "https://aaarchdesign.s3.amazonaws.com/CasaHab-EspanaInglaterra";
+    const s3BaseUrl = "https://aaarchdesign.s3.us-east-2.amazonaws.com/CasaHab-EspanaInglaterra";
 
     // 2. Lista manual de nombres de archivo (jpg, png, etc.)
     const imagePaths = [
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
       img.loading = "lazy";
 
       // Medidas iniciales (opcional) si quieres un tamaño fijo:
-      // img.width = 400;
-      // img.height = 225;
+      img.width = 400;
+      img.height = 225;
 
       // Al hacer clic, alternar entre fullscreen y estado normal
       img.addEventListener("click", () => {
