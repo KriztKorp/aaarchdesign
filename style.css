@@ -79,6 +79,7 @@ header.main-header {
   margin-bottom: 1rem;
   max-width: 600px;
 }
+/*
 .hero-imagen {
   flex: 1 1 300px;
   display: flex;
@@ -88,7 +89,7 @@ header.main-header {
   max-width: 300px;
   width: 100%;
   object-fit: contain;
-}
+}*/
 
 /* Proyectos Recientes */
 .proyectos-recientes {
@@ -174,7 +175,7 @@ header.main-header {
   align-items: flex-start;
   justify-content: center;
 }
-.foto-arquitecta {
+.hero-imagen {
   max-width: 300px;
   width: 100%;
   object-fit: cover;
