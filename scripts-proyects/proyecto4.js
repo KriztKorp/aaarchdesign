@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // 1. URL base de tu bucket S3 (asegúrate de que los archivos sean públicos)
-    const s3BaseUrl = "https://aaarchdesign.s3.us-east-2.amazonaws.com/Argentina/";
+    const s3BaseUrl = "https://aaarchdesign.s3.us-east-2.amazonaws.com/Argentina";
 
     // 2. Lista manual de nombres de archivo (jpg, png, etc.)
     const imagePaths = [
