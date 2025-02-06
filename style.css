@@ -299,6 +299,7 @@ header.main-header {
   margin: 0 auto;
 }
 .card {
+  display: inline-grid;
   background-color: #fff;
   border: 1.5px solid var(--color-acento);
   border-radius: 10px;
