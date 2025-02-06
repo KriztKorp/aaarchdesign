@@ -310,7 +310,7 @@ header.main-header {
 }
 
 a.card {
-  justify-items: anchor-center;
+  justify-content: center;
 }
 
 .card img {
