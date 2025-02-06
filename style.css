@@ -168,6 +168,10 @@ header.main-header {
   text-align: center;
   margin-bottom: 2rem;
 }
+.quienes-somos div {
+  display: flex;
+}
+
 .quienes-somos .info {
   display: flex;
   flex-wrap: wrap;
