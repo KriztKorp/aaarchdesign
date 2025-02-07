@@ -169,34 +169,62 @@ header.main-header {
   margin-bottom: 2rem;
 }
 .quienes-somos div {
-  display: flex;
+  display: -webkit-box;
 }
 
-.quienes-somos .info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-  justify-content: center;
-}
 .hero-imagen {
   max-width: 300px;
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
+  align-items: flex-start;
 }
 .descripcion {
+  display: -webkit-box;
   flex: 1 1 300px;
 }
 .descripcion p {
+  align-items: center;
   margin-bottom: 1rem;
 }
 .descripcion ul {
+  align-items: flex-end;
   list-style: disc;
   padding-left: 1.5rem;
 }
 .descripcion ul li {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 930px) {
+  .quienes-somos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-imagen {
+    max-width: 100%;
+    width: 300px;
+    margin-bottom: 1.5rem;
+  }
+
+  .descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .descripcion p {
+    text-align: justify;
+  }
+
+  .descripcion ul {
+    align-items: center;
+    text-align: left;
+  }
 }
 
 /* Sección Contacto */
