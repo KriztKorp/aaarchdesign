@@ -410,4 +410,14 @@ a.card {
     max-width: 95%;
     max-height: 95%;
   }
+
+  .main-nav a {
+    display: inline-table;
+    text-decoration: none;
+    color: var(--color-primario);
+    font-weight: 400;
+    transition: color 0.4s;
+    border-radius: 5px;
+    padding: 8px;
+  }
 }
