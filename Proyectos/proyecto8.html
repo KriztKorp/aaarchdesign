@@ -33,6 +33,32 @@
     <!-- Galería de imágenes -->
     <section class="image-gallery">
     </section>
+    <section class="precarga">
+      <div id="preloader">
+        <img src="../assets/loading.gif" alt="Cargando...">
+      </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const preloader = document.getElementById("preloader");
+          const content = document.getElementById("content");
+    
+          let loadPercentage = 0;
+          
+          // Simula un incremento en el porcentaje de carga cada 500ms
+          const simulateLoading = setInterval(() => {
+            loadPercentage += 10;
+            console.log(`Progreso de carga: ${loadPercentage}%`);
+    
+            // Si ya se ha alcanzado o superado el 40%, se muestra el contenido
+            if (loadPercentage >= 40) {
+              clearInterval(simulateLoading);
+              preloader.style.display = "none";
+              content.style.display = "block";
+            }
+          }, 500);
+        });
+      </script>
+    </section>
   </main>
 
   <!-- Footer -->
