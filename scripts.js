@@ -53,4 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-  
+document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                document.body.classList.add("fade-out");
+                setTimeout(() => {
+                    window.location = this.href;
+                }, 500); // Coincide con la duración en CSS
+            });
+        });
+    });  
